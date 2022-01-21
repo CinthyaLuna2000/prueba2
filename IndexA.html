@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suma de dos numeros</title>
+	<h1  style="color:Blue;"> Calculadora </h1>
+</head>
+<body>
+	<script type="text/javascript">
+
+function operacion() {
+var uno = document.getElementById("textbox1").value;
+var dos = document.getElementById("textbox2").value;
+var resultado = parseFloat(uno)+parseFloat(dos);
+var textbox3 = document.getElementById("textbox3");
+textbox3.value = resultado;
+
+var resta = parseFloat(uno)-parseFloat(dos);
+var textbox4 = document.getElementById("textbox4");
+textbox4.value = resta;
+
+var multiplicacion = parseFloat(uno)*parseFloat(dos);
+var textbox5 = document.getElementById("textbox5");
+textbox5.value = multiplicacion;
+
+var division = parseFloat(uno)/parseFloat(dos);
+var textbox6 = document.getElementById("textbox6");
+textbox6.value = division;
+
+}
+</script>
+	<body>
+<H4 style="color: purple">INGRESE LOS NUMEROS</H4>
+<input type="text" name="textbox1" id="textbox1" />                                                 
+<input type="text" name="textbox2" id="textbox2" />
+<br><br>
+<input type="submit" name="button" id="button1" onclick="operacion()" value="Imprimir Resultados" style="color:Red;" />
+<br/>
+<br><br><br>
+Suma:
+<input type="text" name="textbox3" id="textbox3" readonly="true" /><br><br>
+
+Resta:
+<input type="text" name="textbox4" id="textbox4" readonly="true" /><br><br>
+
+Multiplicación:
+<input type="text" name="textbox5" id="textbox5" readonly="true" /><br><br>
+
+Division:
+<input type="text" name="textbox6" id="textbox6" readonly="true" /><br><br>
+
+</body>
+	</body>
+</html>
